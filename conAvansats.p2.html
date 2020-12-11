@@ -7,11 +7,16 @@
         <meta name="author" content="Sara Miralles">
     </head>
     <body>
-        <script>
-            import{temporitzador,cuenta} from "scripts/temporitzador.js";
-
-            console.log(temporitzador(5000));
-            console.log(cuenta(60,1,1000));
+        <script type="module">
+            import{temporitzador,cuenta} from "/scripts/temporitzador.js";
+            temporitzador(5000,tiempo);
+            let segons = cuenta(60,1,1000,texto); // conter enrere de 60 segons 
+            if(segons == 51){ //cuant arribem a 51 segons activarem el segon conter enrere
+                cuenta(6,1,100,texto2); // conter enrere de 6 decimes
+            }
         </script>
+        <div id="tiempo"></div>
+        <div id="texto"></div>
+        <div id="texto2"></div>
     </body>
 </html>
