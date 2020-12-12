@@ -24,7 +24,7 @@ async function cuenta(num,i,intervalo,id) { //afegim els parametres
   var contar = num;
   return await new Promise(resolve => { 
     const interval = setInterval(() => {
-      if (counter==0) {
+      if (contar==0) {
         resolve('Fin');
         clearInterval(num); //cuant arribem a 0 parara la execucio del programa
       }
