@@ -54,8 +54,8 @@ function procesarFetch(numsecs, user) {
       
       //fetch post
       fetch(POSTMAN_URL, {
-        //llamamos la direccion y agregamos el contenido del input
-        //agregamos metodo y definimos que no queremos usar cache
+        //llamamos la direccion
+        //agregamos metodo post y definimos que no queremos usar cache y le añadimos el body
         method: "POST",
         cache: "no-cache",
         body: name,
