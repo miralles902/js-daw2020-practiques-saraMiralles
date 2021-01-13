@@ -22,14 +22,12 @@ function clearFields() {
     console.log(element);
   });
 }
-//funcion get
-//pag 387 apunts comprobacio
+
 function procesarFetch(numsecs, user) {
   let id = document.getElementById("id");
   let email = document.getElementById("email");
   let nombre = document.getElementById("name");
   let status = document.getElementById("status");
-  let reg = "^(d{1,12})";
 
   //fetch get
   fetch(BASE_URL + user + "?delay=" + numsecs, {
